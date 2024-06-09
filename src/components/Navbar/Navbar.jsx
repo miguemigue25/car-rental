@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 
 const NavLinks = [
     {
@@ -24,10 +24,11 @@ const NavLinks = [
     }
 ]
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
+
     return (
-        <nav className="shadow-md">
-            <div className="container">
+        <nav className="shadow-md bg-white dark:bg-dark dark:text-white duration-300">
+            <div className="container py-2 md:py-0">
                 <div className="flex justify-between items-center">
                     <div>
                         <h1 className="text-3xl font-bold font-serif">Aviato</h1>
@@ -42,6 +43,14 @@ const Navbar = () => {
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                    <div>
+                        {theme === "dark" ? (
+                            <BiSolidSun onClick={() => setTheme("light")} className="text-2xl" />
+                        ) : (
+                            <BiSolidMoon onClick={() => setTheme("dark")} className="text-2xl" />
+                        )}
+
                     </div>
                 </div>
             </div>
