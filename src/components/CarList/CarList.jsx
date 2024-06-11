@@ -44,9 +44,9 @@ const CarList = () => {
                 <p
                     data-aos="fade-up"
                     data-aos-delay="400"
-                    className="text-2xl pb-10 hover:border-primary text-center dark:text-gray-300 text-black"
+                    className="text-xl font-thin pb-10 hover:border-primary text-center dark:text-gray-300 text-black"
                 >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quia voluptatum consequuntur nemo esse doloremque odit officia vero, nesciunt facilis!
+                    At Aviato Auto Detail, we offer competitive pricing for premium mobile auto detailing services, ensuring you get the best value for your money.
                 </p>
                 <div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">

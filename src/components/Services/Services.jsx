@@ -9,28 +9,28 @@ const skillsData = [
     {
         name: "Best Price",
         icon: (
-            <FaCameraRetro className="text-5xl text-primary group-hover:text-black duration-300" />
+            <FaCameraRetro className="text-4xl text-primary group-hover:text-black duration-300" />
         ),
         link: "#",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        description: "At Aviato Auto Detail, we offer competitive procing for premium mobile auto detailing services, ensuring you get the best value for your money.",
         aosDelay: "0",
     },
     {
         name: "Fast and Safe",
         icon: (
-            <GiNotebook className="text-5xl text-primary group-hover:text-black duration-300" />
+            <GiNotebook className="text-4xl text-primary group-hover:text-black duration-300" />
         ),
         link: "#",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        description: "Our team at Aviato Auto Detail guarantees fast and safe detailing services, using top-of-the-line products and techniques to protect your vehicle.",
         aosDelay: "500",
     },
     {
-        name: "Experience Drivers",
+        name: "Experienced Detailers",
         icon: (
-            <SlNote className="text-5xl text-primary group-hover:text-black duration-500" />
+            <SlNote className="text-4xl text-primary group-hover:text-black duration-500" />
         ),
         link: "#",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        description: "Trust our experiences and professional detailers at Aviato Auto Detail to treat your car with the utmost care and precision.",
         aosDelay: "1000",
     },
 ];
@@ -51,13 +51,13 @@ const Services = () => {
                                 className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-dark  hover:bg-primary duration-300 text-white hover:text-black rounded-lg"
                             >
                                 <div className="grid place-items-center">{skill.icon}</div>
-                                <h1 className="text-2xl font-bold">{skill.name}</h1>
+                                <h1 className="text-2xl font-sans">{skill.name}</h1>
                                 <p>{skill.description}</p>
-                                <a href={skill.link}
+                                {/* <a href={skill.link}
                                     className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
                                 >
                                     Learn More
-                                </a>
+                                </a> */}
                             </div>
                         ))}
                     </div>
